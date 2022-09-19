@@ -1,12 +1,12 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Test React App" />
+  <img src="./.github/app.gif" alt="Formik Form" />
 
   &#xa0;
 
   <!-- <a href="https://testreactapp.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Test React App</h1>
+<h1 align="center">Formik form</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/alcabanillas/formikForm?color=56BEB8">
@@ -48,27 +48,6 @@
 
 Creating a form with react and adding validation using formik.
 
-Setup of the project:
-
-```bash
-# Clone this project
-$ git clone https://github.com/alcabanillas/formikForm
-
-# Access
-$ cd test-react-app
-
-# Install dependencies
-$ npm install
-
-#Add forkik
-$ npm install formik --save
-
-# Run the project
-$ npm start
-
-# The server will initialize in the <http://localhost:3000>
-```
-
 
 ## :sparkles: Features ##
 
@@ -90,9 +69,11 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ## :checkered_flag: Starting ##
 
+Setup of the project:
+
 ```bash
 # Clone this project
-$ git clone https://github.com/{alcabanillas}/test-react-app
+$ git clone https://github.com/alcabanillas/formikForm
 
 # Access
 $ cd test-react-app
@@ -100,8 +81,11 @@ $ cd test-react-app
 # Install dependencies
 $ npm install
 
+#Add formik
+$ npm install formik --save
+
 # Run the project
-$ npm run
+$ npm start
 
 # The server will initialize in the <http://localhost:3000>
 ```
