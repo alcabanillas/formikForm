@@ -9,13 +9,13 @@
 <h1 align="center">Test React App</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/alcabanillas/build-a-formik-form?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/alcabanillas/formikForm?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/alcabanillas/build-a-formik-form?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/alcabanillas/formikForm?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/alcabanillas/build-a-formik-form?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/alcabanillas/formikForm?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/alcabanillas/build-a-formik-form?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/alcabanillas/formikForm?color=56BEB8">
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{alcabanillas}/test-react-app?color=56BEB8" /> -->
 
