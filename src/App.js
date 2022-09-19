@@ -4,20 +4,24 @@ import {useFormik} from "formik";
 
 function App() {
   const validateEmail = (email) => {
-    const regexp = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
-    return email.match(regexp) ? true : false;
+    if (!email) return { emailField : 'Field required'};
+    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) return { emailField : 'Username should be and email'};
+    return {};
+  }
+  
+  const validatePassword = (password) => {
+    if (!password) return { pswField: 'Field required'};
+    return {};
   }
 
   const validateFields = (values) => {
     let errors = {}
-    if (!values.emailField) {
-      errors = {...errors,  emailField : 'Field required' };
-    } else {
-      if (!validateEmail(values.emailField)){
-        errors = {...errors, emailField: 'Username should be an email'}
-      }
-    }
-    if (!values.pswField) errors = {...errors,  pswField : 'Field required' }
+
+    errors = {...errors, ...validateEmail(values.emailField)};
+    errors = {...errors, ...validatePassword(values.pswField)};
+
+    console.log(errors);
+
     return errors;
   }
 
