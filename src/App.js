@@ -14,7 +14,9 @@ function App() {
       pswField: ''
     },
     onSubmit: values => {
+      if (!formik.isValidating && formik.isSubmitting) {
       alert("Login Successful");
+      }
     },
     validate: values => {
       let errors = {};
