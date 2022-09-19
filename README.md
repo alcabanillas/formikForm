@@ -46,23 +46,43 @@
 
 ## :dart: About ##
 
-Describe your project
+Creating a form with react and adding validation using formik.
+
+Setup of the project:
+
+```bash
+# Clone this project
+$ git clone https://github.com/alcabanillas/formikForm
+
+# Access
+$ cd test-react-app
+
+# Install dependencies
+$ npm install
+
+#Add forkik
+$ npm install formik --save
+
+# Run the project
+$ npm start
+
+# The server will initialize in the <http://localhost:3000>
+```
+
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Check email and password are not empty. \
+:heavy_check_mark: Validate password with regexp\
+:heavy_check_mark: If email and password are validated, onSubmit is fired.
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
+- [Formik](https://formik.org/)
+
 
 ## :white_check_mark: Requirements ##
 
@@ -78,10 +98,10 @@ $ git clone https://github.com/{alcabanillas}/test-react-app
 $ cd test-react-app
 
 # Install dependencies
-$ yarn
+$ npm install
 
 # Run the project
-$ yarn start
+$ npm run
 
 # The server will initialize in the <http://localhost:3000>
 ```
@@ -91,7 +111,7 @@ $ yarn start
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/{alcabanillas}" target="_blank">{{YOUR_NAME}}</a>
+Made with :heart: by <a href="https://github.com/alcabanillas" target="_blank">Alvaro Cabanillas</a>
 
 &#xa0;
 
