@@ -7,6 +7,20 @@ function App() {
     const regexp = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     return email.match(regexp) ? true : false;
   }
+
+  const validateFields = (values) => {
+    let errors = {}
+    if (!values.emailField) {
+      errors = {...errors,  emailField : 'Field required' };
+    } else {
+      if (!validateEmail(values.emailField)){
+        errors = {...errors, emailField: 'Username should be an email'}
+      }
+    }
+    if (!values.pswField) errors = {...errors,  pswField : 'Field required' }
+    return errors;
+  }
+
   // TODO: add a const called formik assigned to useFormik()
   const formik = useFormik ({
     initialValues: {
@@ -19,19 +33,7 @@ function App() {
       }
     },
     validate: values => {
-      let errors = {};
-
-      if (!values.emailField) {
-        errors = {...errors,  emailField : 'Field required' };
-      } else {
-        if (!validateEmail(values.emailField)){
-          errors = {...errors, emailField: 'Username should be an email'}
-        }
-      }
-
-      if (!values.pswField) errors = {...errors,  pswField : 'Field required' }
-
-      return errors;
+      return validateFields(values);
     }
   });
 
