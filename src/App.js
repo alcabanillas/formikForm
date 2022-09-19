@@ -8,7 +8,7 @@ function App() {
     if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) return { emailField : 'Username should be and email'};
     return {};
   }
-  
+
   const validatePassword = (password) => {
     if (!password) return { pswField: 'Field required'};
     return {};
@@ -17,10 +17,8 @@ function App() {
   const validateFields = (values) => {
     let errors = {}
 
-    errors = {...errors, ...validateEmail(values.emailField)};
+    errors = {...validateEmail(values.emailField)};
     errors = {...errors, ...validatePassword(values.pswField)};
-
-    console.log(errors);
 
     return errors;
   }
